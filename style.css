@@ -64,22 +64,34 @@ body {
     background-color: var(--neon-color);
 
     animation: loading 3.5s linear 500ms 1 normal forwards;
+    
+    transition: opacity 0.5s;
 
 }
 
 
-.loading_text {
+.loading_text, .complete_text{
     color: white;
     font-size: 1.7rem;
     position: absolute;
     top: 52%;
     opacity: 0;
 
-    transition: all 2s;
+    transition: all 1s;
 
 }
 
-.loading_text_appear {
+.complete{
+    width: 90px;
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    border-radius: 50%;
+
+    transition: all 1s
+}
+
+.appear {
     opacity: 100;
 }
 
